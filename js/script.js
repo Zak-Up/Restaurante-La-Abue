@@ -1,6 +1,10 @@
 /*  -----======= ANIMATIONS ON SCROLL ======------ */
 window.addEventListener("load", function(){
-    AOS.init();
+    this.document.querySelector(".page-loader").classList.add("fade-out");
+    this.setTimeout(function(){
+        document.querySelector(".page-loader").style.display="none";
+    },600);
+    AOS.init();//ANIMATIONS SCROLL
 })
 
 /* ----====== TOGGLE NAVBAR ======----- */
